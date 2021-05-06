@@ -1,0 +1,111 @@
+.main-nav {
+  flex-grow: 1;
+}
+
+.main-nav__list {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin: 0;
+  padding: 0 19px;
+  list-style: none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $black-op20;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 100px 0;
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.main-nav--close .main-nav__list {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__item {
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    padding: 17px 19px;
+    background-color: $light-gray;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 16px;
+      bottom: 0;
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin: auto;
+      background-image: url('../img/arrow.svg');
+    }
+  }
+}
+
+.main-nav__item a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: $white-op70;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    color: $gray;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav--close .main-nav__toggle {
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-left: calc(100% - 50px);
+    width: 50px;
+    height: 50px;
+    background: $blue url('../img/burger.svg') no-repeat center;
+    border: none;
+  }
+
+}
+
+.main-nav--open .main-nav__toggle {
+  @media (max-width: $tablet-width) {
+    display: block;
+    margin-left: calc(100% - 50px);
+    width: 50px;
+    height: 50px;
+    background: none url('../img/vector.svg') no-repeat center;
+    border: none;
+  }
+}

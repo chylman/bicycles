@@ -1,0 +1,10 @@
+.page-body {
+  height: 100vh;
+  font-family: Open Sans, sans-serif;
+}
+
+.page-body__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
