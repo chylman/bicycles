@@ -46,6 +46,7 @@
 .main-nav__item {
 
   @media (max-width: $tablet-width) {
+    box-sizing: border-box;
     position: relative;
     padding: 17px 19px;
     background-color: $light-gray;
