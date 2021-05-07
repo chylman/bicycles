@@ -1,0 +1,99 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 16px;
+  }
+}
+
+.main-form p {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    max-width: 321px;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black3;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 288px;
+  }
+}
+
+.main-form input {
+  box-sizing: border-box;
+  display: block;
+  width: 327px;
+  padding: 14px 29px 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: $white;
+  border: 1px solid $light-gray2;
+  border-radius: 6px;
+
+  &::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: $black2;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.main-form button {
+  display: block;
+  width: 327px;
+  padding: 15px 20px 15px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $black3;
+  background-color: $blue;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 321px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}

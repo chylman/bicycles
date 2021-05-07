@@ -1,3 +1,10 @@
 .page-main {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.page-main__wrapper {
+  box-sizing: border-box;
+  width: 100%;
 }
