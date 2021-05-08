@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 1146px;
 
   @media (max-width: $tablet-width) {
     min-width: initial;
@@ -53,11 +52,14 @@
 }
 
 .map__wrapper {
+  box-sizing: border-box;
   width: 100%;
+  max-width: 957px;
   height: 530px;
   padding: 0 84px 0 105px;
 
   @media (max-width: $tablet-width) {
+    max-width: initial;
     box-sizing: border-box;
     padding: 0 35px;
   }

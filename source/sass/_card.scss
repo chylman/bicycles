@@ -18,5 +18,20 @@
 
 .card__img-wrapper {
   width: 342px;
-  height: 503px;
+  height: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.card__img-wrapper img {
+  object-fit: cover;
+  border-radius: 10px;
+  height: auto;
+
+  @media (max-width: $tablet-width) {
+    max-height: 300px;
+  }
 }

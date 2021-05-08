@@ -1,9 +1,10 @@
 .preview {
   width: 100%;
-  min-height: 850px;
+  min-height: 845px;
   background: $dark-gray url('../img/bike-main.jpg') no-repeat bottom;
+  background-size: cover;
   margin-top: -82px;
-  padding: 386px 11% 0 10%;
+  padding: 386px 0 0 0;
 
   @media (max-width: $tablet-width) {
     min-height: initial;
@@ -14,8 +15,10 @@
 
 .preview__wrapper {
   display: flex;
-  column-gap: 160px;
-  padding: 0 0 0 143px;
+  justify-content: space-between;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 0 0 0 9%;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
@@ -26,7 +29,10 @@
 }
 
 .preview__text {
+  max-width: 35%;
+
   @media (max-width: $tablet-width) {
+    max-width: initial;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,5 +85,15 @@
 
   @media (max-width: $mobile-width) {
     margin: 0 0 70px 0;
+  }
+}
+
+.preview__form {
+  max-width: 40%;
+  margin: 0 84px 0 0;
+
+  @media (max-width: $tablet-width) {
+    max-width: initial;
+    margin: 0;
   }
 }

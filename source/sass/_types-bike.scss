@@ -4,18 +4,31 @@
 
 .types-bike__wrapper {
   padding: 149px 11% 147px 10%;
+
+  @media (max-width: $tablet-width) {
+    padding: 50px 80px 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 50px 25px 50px;
+  }
 }
 
 .types-bike__title {
-  margin: 0 0 50px;
+  margin: 0 0 30px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  color: black;
+  color: $black3;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .types-bike__list {
@@ -28,17 +41,31 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .types-bike__item {
   position: relative;
   z-index: 1;
+
   &:first-child {
     padding: 10px 0 0 0;
+
+    @media (max-width: $tablet-width) {
+     padding: 0;
+    }
   }
 
   &:nth-child(3n + 2) {
     padding: 39px 0 0 0;
+
+    @media (max-width: $tablet-width) {
+     padding: 0;
+    }
   }
 
   &:nth-child(3n + 2)::before, &:nth-child(3n + 2)::after {
@@ -48,6 +75,10 @@
     width: 47px;
     height: 47px;
     border: 8px solid $blue;
+
+    @media (max-width: $tablet-width) {
+     display: none;
+    }
   }
 
   &:nth-child(3n + 2)::before {
@@ -62,6 +93,10 @@
 
   &:nth-child(4n) {
     padding: 10px 0 0 0;
+
+    @media (max-width: $tablet-width) {
+     padding: 0;
+    }
   }
 
   &:nth-child(3n + 1)::before {
@@ -75,6 +110,19 @@
     height: 180px;
     border: 27px solid $blue;
     border-radius: 50%;
+
+    @media (max-width: $tablet-width) {
+      top: 203px;
+      left: -33px;
+      width: 127px;
+      height: 127px;
+      border-width: 18px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: 203px;
+      left: -22px;
+    }
   }
 
   &:nth-child(3n)::before {
@@ -87,5 +135,13 @@
     height: 95px;
     border: 17px solid $blue;
     border-radius: 50%;
+
+    @media (max-width: $tablet-width) {
+      top: -22px;
+      right: -23px;
+      width: 68px;
+      height: 68px;
+      border-width: 13px;
+    }
   }
 }

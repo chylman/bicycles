@@ -1,0 +1,145 @@
+.video {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, $dark-gray 80%, $white 80% 100% );
+
+  @media (max-width: $tablet-width) {
+    background: linear-gradient(to bottom, $dark-gray 70%, $white 70% 100% );
+  }
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 120px 0 150px;
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 35px 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 84px 16px 70px;
+  }
+}
+
+.video h2 {
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.video p {
+  max-width: 340px;
+  margin: 20px 0 56px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white-op70;
+
+  @media (max-width: $tablet-width) {
+    margin: 20px 0 40px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 20px 0 50px;
+  }
+}
+
+.video__frame-wrapper {
+  position: relative;
+}
+
+.video__img-wrapper {
+  max-width: 929px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 503px;
+    height: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 288px;
+    height: auto;
+  }
+}
+
+.video__button-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.video__button-wrapper button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.video__button-wrapper svg {
+  width: 65px;
+  height: 65px;
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
