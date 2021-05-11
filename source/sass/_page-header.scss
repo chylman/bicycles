@@ -9,9 +9,17 @@
   }
 }
 
+.page-header--js {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    min-height: 50px;
+    width: 100%;
+  }
+}
+
 .page-header__wrapper {
   box-sizing: border-box;
-  min-width: 873px;
+  min-width: 926px;
   margin: 0 auto;
   padding: 21px 0 9px;
 

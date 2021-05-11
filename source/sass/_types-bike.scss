@@ -1,21 +1,25 @@
 .types-bike {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-color: $light-gray3;
 }
 
 .types-bike__wrapper {
-  padding: 149px 11% 147px 10%;
+  max-width: 1440px;
+  padding: 149px 60px 122px 60px;
 
   @media (max-width: $tablet-width) {
-    padding: 50px 80px 70px;
+    padding: 50px 80px 45px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 50px 25px 50px;
+    padding: 50px 25px 30px;
   }
 }
 
 .types-bike__title {
-  margin: 0 0 30px;
+  margin: 0 0 50px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -26,6 +30,7 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
+    margin: 0 0 28px;
     font-size: 24px;
     line-height: 41px;
   }
@@ -42,9 +47,14 @@
   padding: 0;
   list-style: none;
 
+  @media (max-width: $tablet-width) {
+    row-gap: 27px;
+  }
+
   @media (max-width: $mobile-width) {
     flex-direction: column;
     align-items: center;
+    row-gap: 20px;
   }
 }
 
