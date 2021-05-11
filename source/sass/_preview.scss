@@ -6,14 +6,19 @@
   margin-top: -82px;
   padding: 343px 0 0 0;
 
+  @media (min-resolution: 2dppx) {
+    background: $dark-gray url('../img/bike-main@2x.jpg') no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $tablet-width) {
+      background: none;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     min-height: initial;
     padding: 0;
     background: none;
-  }
-
-  @media (min-resolution: 2dppx) {
-    background: $dark-gray url('../img/bike-main@2x.jpg') no-repeat center;
   }
 }
 
@@ -49,6 +54,7 @@
 
     @media (min-resolution: 2dppx) {
       background: $dark-gray url('../img/bike-main@2x.jpg') no-repeat center;
+      background-size: cover;
     }
   }
 

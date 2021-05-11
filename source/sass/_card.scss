@@ -18,9 +18,8 @@
 
 .card__img-wrapper {
   width: 342px;
-  height: auto;
-  background-color: $gray;
   border-radius: 10px;
+  background-color: $light-gray2;
 
   @media (max-width: $tablet-width) {
     width: 270px;
