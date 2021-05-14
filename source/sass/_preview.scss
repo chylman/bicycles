@@ -1,13 +1,13 @@
 .preview {
   width: 100%;
   min-height: 845px;
-  background: $dark-gray url('../img/bike-main.jpg') no-repeat center;
+  background: $dark-gray url("../img/bike-main.jpg") no-repeat center;
   background-size: cover;
   margin-top: -82px;
   padding: 343px 0 0 0;
 
   @media (min-resolution: 2dppx) {
-    background: $dark-gray url('../img/bike-main@2x.jpg') no-repeat center;
+    background: $dark-gray url("../img/bike-main@2x.jpg") no-repeat center;
     background-size: cover;
 
     @media (max-width: $tablet-width) {
@@ -27,7 +27,7 @@
   justify-content: space-between;
   max-width: 1146px;
   margin: 0 auto;
-  padding: 0 0 0 9.2%;
+  padding: 0 0 0 135px;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
@@ -49,11 +49,11 @@
     width: 100%;
     padding: 134px 16px 0 16px;
     text-align: center;
-    background: $dark-gray url('../img/bike-main.jpg') no-repeat center;
+    background: $dark-gray url("../img/bike-main.jpg") no-repeat center;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background: $dark-gray url('../img/bike-main@2x.jpg') no-repeat center;
+      background: $dark-gray url("../img/bike-main@2x.jpg") no-repeat center;
       background-size: cover;
     }
   }
@@ -63,7 +63,7 @@
   }
 }
 
-.preview__text h3 {
+.preview__slogan {
   margin: 46px 0 24px 0;
   font-family: $font;
   font-style: normal;
@@ -81,7 +81,7 @@
   }
 }
 
-.preview__text p {
+.preview__small-slogan {
   font-family: $font;
   font-style: normal;
   font-weight: 300;
@@ -100,15 +100,5 @@
 
   @media (max-width: $mobile-width) {
     margin: 0 0 70px 0;
-  }
-}
-
-.preview__form {
-  max-width: 42%;
-  margin: 0 84px 0 0;
-
-  @media (max-width: $tablet-width) {
-    max-width: initial;
-    margin: 0;
   }
 }

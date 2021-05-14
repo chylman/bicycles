@@ -33,6 +33,7 @@
 .contacts svg {
   display: inline-block;
   vertical-align: middle;
+  margin: 0 15px 0 0;
   fill: white;
 }
 
@@ -54,9 +55,4 @@
   @media (max-width: $mobile-width) {
     line-height: 32px;
   }
-}
-
-.contacts span {
-  display: block;
-  margin: 0 0 0 15px;
 }

@@ -7,7 +7,7 @@
 
 .types-bike__wrapper {
   max-width: 1440px;
-  padding: 149px 60px 122px 60px;
+  padding: 112px 60px 147px 60px;
 
   @media (max-width: $tablet-width) {
     padding: 50px 80px 45px;
@@ -82,7 +82,7 @@
     padding: 10px 0 0 0;
 
     @media (max-width: $tablet-width) {
-     padding: 0;
+      padding: 0;
     }
   }
 
@@ -90,12 +90,13 @@
     padding: 39px 0 0 0;
 
     @media (max-width: $tablet-width) {
-     padding: 0;
+      padding: 0;
     }
   }
 
-  &:nth-child(3n + 2)::before, &:nth-child(3n + 2)::after {
-    content: '';
+  &:nth-child(3n + 2)::before,
+  &:nth-child(3n + 2)::after {
+    content: "";
     position: absolute;
     display: block;
     width: 47px;
@@ -103,7 +104,7 @@
     border: 8px solid $blue;
 
     @media (max-width: $tablet-width) {
-     display: none;
+      display: none;
     }
   }
 
@@ -121,12 +122,12 @@
     padding: 10px 0 0 0;
 
     @media (max-width: $tablet-width) {
-     padding: 0;
+      padding: 0;
     }
   }
 
   &:nth-child(3n + 1)::before {
-    content: '';
+    content: "";
     z-index: -1;
     position: absolute;
     top: 156px;
@@ -152,7 +153,7 @@
   }
 
   &:nth-child(3n)::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -32px;
     right: -36px;

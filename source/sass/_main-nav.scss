@@ -26,7 +26,7 @@
   list-style: none;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 22px;
     bottom: -10px;
@@ -55,7 +55,6 @@
 }
 
 .main-nav__item {
-
   @media (max-width: $tablet-width) {
     box-sizing: border-box;
     position: relative;
@@ -64,7 +63,7 @@
     background-color: $light-gray;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 16px;
@@ -73,7 +72,7 @@
       width: 25px;
       height: 25px;
       margin: auto;
-      background-image: url('../img/arrow.svg');
+      background-image: url("../img/arrow.svg");
     }
   }
 }
@@ -118,10 +117,9 @@
     margin-left: calc(100% - 50px);
     width: 50px;
     height: 50px;
-    background: $blue url('../img/burger.svg') no-repeat center;
+    background: $blue url("../img/burger.svg") no-repeat center;
     border: none;
   }
-
 }
 
 .main-nav--open .main-nav__toggle {
@@ -130,7 +128,7 @@
     margin-left: calc(100% - 50px);
     width: 50px;
     height: 50px;
-    background: none url('../img/vector.svg') no-repeat center;
+    background: none url("../img/vector.svg") no-repeat center;
     border: none;
   }
 }

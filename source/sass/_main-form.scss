@@ -3,9 +3,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  max-width: 42%;
+  margin: 0 84px 0 0;
 
   @media (max-width: $tablet-width) {
-    margin-top: 70px;
+    max-width: initial;
+    margin: 70px 0 0 0;
     row-gap: 0;
   }
 
@@ -39,10 +42,6 @@
     max-width: 288px;
     margin: 0 0 17px 0;
   }
-}
-
-.main-form label {
-  display: none;
 }
 
 .main-form input {
