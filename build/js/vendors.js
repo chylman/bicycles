@@ -11488,7 +11488,8 @@ return jQuery;
 }, window.jQuery, window.Zepto));
 
 $(function() {
-  $('input[type="tel"]').mask('+7 999 999 99 99');
+  $('input[type="tel"]').mask('+7 (999) 999 99 99');
+  $('.clear-if-not-match').mask('+7 (999) 999 99 99', {clearIfNotMatch: true});
 });
 
 

@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans-bolditalic.woff2') format('woff2'),
-      url('../fonts/opensans-bolditalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
+$font: 'Open Sans', 'Arial', sans-serif;
 
 @font-face {
   font-family: 'Open Sans';
@@ -27,28 +20,10 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/opensans-semibolditalic.woff2') format('woff2'),
-      url('../fonts/opensans-semibolditalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
   src: url('../fonts/opensans-extrabold.woff2') format('woff2'),
       url('../fonts/opensans-extrabold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans-lightitalic.woff2') format('woff2'),
-      url('../fonts/opensans-lightitalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -58,15 +33,6 @@
       url('../fonts/opensans-light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans-extrabolditalic.woff2') format('woff2'),
-      url('../fonts/opensans-extrabolditalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
   font-display: swap;
 }
 

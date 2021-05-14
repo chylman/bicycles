@@ -30,7 +30,7 @@
 
 .video h2 {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -48,7 +48,7 @@
 .video p {
   max-width: 340px;
   margin: 20px 0 56px;
-  font-family: Open Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;

@@ -65,7 +65,7 @@
 
 .preview__text h3 {
   margin: 46px 0 24px 0;
-  font-family: Open Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: bold;
   font-size: 46px;
@@ -82,7 +82,7 @@
 }
 
 .preview__text p {
-  font-family: Open Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;

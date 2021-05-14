@@ -6,7 +6,7 @@
 
 .card h3 {
   order: 2;
-  font-family: Open Sans;
+  font-family: $font;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -18,8 +18,9 @@
 
 .card__img-wrapper {
   width: 342px;
-  border-radius: 10px;
+  height: 503px;
   background-color: $light-gray2;
+  border-radius: 10px;
 
   @media (max-width: $tablet-width) {
     width: 270px;
@@ -28,7 +29,6 @@
 }
 
 .card__img-wrapper img {
-  height: auto;
   object-fit: cover;
   border-radius: 10px;
 

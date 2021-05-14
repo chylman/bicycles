@@ -7,8 +7,6 @@
   <title>Moon - магазин велосипедов</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" crossorigin="">
-  <link rel="preload" href="fonts/opensans-extrabold.woff2" as="font" crossorigin="">
-  <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="">
 </head>
@@ -16,7 +14,7 @@
   <div class="page-body__wrapper">
     <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
-        <a href="#" class="main-logo">
+        <a class="main-logo">
           <img src="img/logo.svg" alt="Логотип магазина велосипедов Moon" width="68" height="20">
         </a>
         <!-- Nav modified main-nav--close, main-nav--open -->
@@ -59,8 +57,10 @@
                 <p>
                   Заполните поля ниже и мы подберем велосипед Вашей мечты
                 </p>
+                <label for="name">Имя</label>
                 <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
-                <input type="tel" name="phone-number" id="phone-number" placeholder="Введите Ваш номер телефона" required="">
+                <label for="phone-number"></label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Введите Ваш номер телефона" minlength="16" required="">
                 <button type="submit" aria-label="Кнопка отправки формы">
                   Подобрать велосипед мечты
                 </button>
@@ -104,37 +104,46 @@
             <h2 class="types-bike__title">Виды велосипедов</h2>
             <ul class="types-bike__list">
               <li class="types-bike__item">
-                <article class="card">
-                  <h3>Дорожный велосипед</h3>
-                  <div class="card__img-wrapper">
-                    <picture>
-                      <source srcset="./img/road-bike.webp, ./img/road-bike@2x.webp 2x" type="image/webp">
-                      <img src="./img/road-bike.jpg" alt="Фото велосипеда" width="342" height="503" srcset="./img/road-bike@2x.jpg 2x">
-                    </picture>
-                  </div>
+                <a href="#!">
+                  <article class="card">
+                    <h3>Дорожный велосипед</h3>
+                    <div class="card__img-wrapper">
+                      <picture>
+                        <!-- 1х: 342px; 2x: 744px -->
+                        <source srcset="./img/road-bike.webp, ./img/road-bike@2x.webp 2x" type="image/webp">
+                        <img src="./img/road-bike.jpg" alt="Фото велосипеда" width="342" height="503" srcset="./img/road-bike@2x.jpg 2x">
+                      </picture>
+                    </div>
+                  </article>
+                </a>
+            </li>
+              <li class="types-bike__item">
+                <a href="#!">
+                  <article class="card">
+                    <h3>Горный велосипед</h3>
+                    <div class="card__img-wrapper">
+                      <picture>
+                        <!-- 1х: 342px; 2x: 744px -->
+                        <source srcset="./img/mountain-bike.webp, ./img/mountain-bike@2x.webp 2x" type="image/webp">
+                        <img src="./img/mountain-bike.jpg" alt="Фото велосипеда" width="342" height="503" srcset="./img/mountain-bike@2x.jpg 2x">
+                      </picture>
+                    </div>
                 </article>
+                </a>
               </li>
               <li class="types-bike__item">
-                <article class="card">
-                  <h3>Горный велосипед</h3>
-                  <div class="card__img-wrapper">
-                    <picture>
-                      <source srcset="./img/mountain-bike.webp, ./img/mountain-bike@2x.webp 2x" type="image/webp">
-                      <img src="./img/mountain-bike.jpg" alt="Фото велосипеда" width="342" height="503" srcset="./img/mountain-bike@2x.jpg 2x">
-                    </picture>
-                  </div>
-                </article>
-              </li>
-              <li class="types-bike__item">
-                <article class="card">
-                  <h3>Детский велосипед</h3>
-                  <div class="card__img-wrapper">
-                    <picture>
-                      <source srcset="./img/children-bike.webp, ./img/children-bike@2x.webp 2x" type="image/webp">
-                      <img src="./img/children-bike.jpg" alt="Фото велосипеда" width="342" height="503" srcset="./img/children-bike@2x.jpg 2x">
-                    </picture>
-                  </div>
-                </article>
+                <a href="#!">
+                  <article class="card">
+                      <h3>Детский велосипед</h3>
+                      <div class="card__img-wrapper">
+                        <picture>
+                          <!-- 1х: 342px; 2x: 744px -->
+                          <source srcset="./img/children-bike.webp, ./img/children-bike@2x.webp 2x" type="image/webp">
+                          <img src="./img/children-bike.jpg" alt="Фото велосипеда" width="342" height="503" srcset="./img/children-bike@2x.jpg 2x">
+                        </picture>
+                      </div>
+                  </article>
+                </a>
               </li>
             </ul>
           </div>
@@ -150,6 +159,7 @@
             <div class="video__frame-wrapper">
               <div class="video__img-wrapper">
                 <picture>
+                  <!-- 1х: 929px; 2x: 1856px -->
                   <source srcset="./img/video-bike.webp, ./img/video-bike@2x.webp 2x" type="image/webp">
                   <img src="./img/video-bike.jpg" alt="Видео про велосипеды" srcset="./img/video-bike@2x.jpg 2x" width="929" height="522">
                 </picture>
