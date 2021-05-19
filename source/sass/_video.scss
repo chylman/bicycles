@@ -95,7 +95,7 @@
   object-fit: cover;
 }
 
-.video__frame-wrapper button {
+.video__button {
   position: absolute;
   top: 0;
   right: 0;
@@ -104,6 +104,7 @@
   width: 65px;
   height: 65px;
   margin: auto;
+  padding: 0;
   background: none;
   border: none;
   border-radius: 50%;
