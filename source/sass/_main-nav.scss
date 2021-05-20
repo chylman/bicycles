@@ -19,7 +19,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 134px;
   max-width: 921px;
   margin: 0 auto;
   padding: 0 45px 0 42px;
@@ -55,6 +54,17 @@
 }
 
 .main-nav__item {
+  margin-right: 67px;
+  margin-left: 67px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   @media (max-width: $tablet-width) {
     box-sizing: border-box;
     position: relative;
